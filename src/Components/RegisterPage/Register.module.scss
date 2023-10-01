@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto:wght@400;500;900&family=Single+Day&display=swap');
+
+
+
+.container{
+    display: flex;
+    width: 100vw;
+    background-color: black;
+}
+
+.image{
+    width: 50vw;
+    height: 100vh;
+
+    >img{
+        position: relative;
+        object-fit:cover;
+        width: inherit;
+        height: inherit;
+    }
+
+    >.imageText{
+        position: absolute;
+        width: inherit;
+        bottom: 10vh;
+        font-family: Roboto;
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 78px;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin: 0 1rem;
+    }
+
+}
+
+.formContainer{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+
+    >.formMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >.textdata{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+
+            >.title{
+                font-family: Single Day;
+                font-size: 55px;
+                font-weight: 400;
+                color: #72DB73;
+                margin: 0px;
+            }
+
+            >.description{
+                font-family: DM Sans;
+                font-size: 20px;
+                font-weight: 400;
+                margin-top: 0px;
+                margin-bottom: 0px;
+
+            }
+        }
+
+        >form{
+            display: flex;
+            flex-direction: column;
+            >.inputbox{
+                border: none;
+            }
+            >.inputbox,.errorBorder{
+                background-color:#292929;
+                margin-top: 1rem;
+                padding: .8rem;
+                border-radius: 3.82px;
+                width: 30vw;
+                color: #ffff;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            >.checkboxContainer{
+                margin-top: 0;
+                margin-bottom: 1rem;
+
+                >.checkbox{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    margin: 1rem 0px 0 0;
+
+                    >p{
+                        font-family: DM Sans;
+                        font-size: 15px;
+                        font-weight: 400;
+                        letter-spacing: 0.02em;
+                        color: #7C7C7C;
+                        margin: 0;
+    
+                    }
+                }
+            }
+        }
+
+        >.terms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:32vw;
+
+            >.termsPara{
+                color: #7C7C7C;
+            }
+
+            >.termsPara,.terms{
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 0.02em;
+                margin-bottom: 0px;
+
+                >.terms{
+                    color: #72DB73;
+                }
+            }
+        }
+    }
+}
+
+span{
+    height: 10px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    color: #F81212;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.errorBorder{
+    border: 1px solid #F81212;
+}

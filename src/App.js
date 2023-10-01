@@ -1,9 +1,15 @@
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Style from  './App.module.scss';
+import Register from './Components/RegisterPage/Register';
+import Home from './Components/page/Home';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        React App By Ubais
+    <div>
+        <Routes>
+          <Route path='/register' element={<Register/>} />
+          <Route path='/' element={<Home/>} />
+        </Routes>
     </div>
   );
 }
