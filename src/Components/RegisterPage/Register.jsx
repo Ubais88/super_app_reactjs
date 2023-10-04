@@ -30,19 +30,26 @@ const Register = () => {
         e.preventDefault();
         if(isValidForm()){
             console.log("valid from" , formData);
-
-            // setFormData({
-            //     name:"",
-            //     userName:"",
-            //     email:"",
-            //     mobile:"",
-            //     checkbox:false
-            // })
+            setFormData({
+                name:"",
+                userName:"",
+                email:"",
+                mobile:"",
+                checkbox:false
+            })
             localStorage.setItem("registrationData" , JSON.stringify(formData));
             navigate("/");
         }
     }
 
+    //  checking the registration data is present in the local storage or not
+    useEffect(() => {
+        if (localStorage.getItem('registrationData')) {
+            navigate("/")
+        }
+      }, []);
+
+    // validation
     const isValidForm = () => {
         const newErrors = {};
         if(!formData.name.trim()){
