@@ -1,0 +1,87 @@
+::-webkit-scrollbar {
+    width: 0.1em; /* Set the width of the scrollbar to a very small value */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb (dragging part) of the scrollbar */
+  }
+
+
+
+
+.main{
+    height: 360px;
+    width: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    background-color:#5746EA;
+    margin: 0;
+    
+
+    >.left{
+        margin: 0px 0 0 -30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >.img{
+            width: 160px;
+            height: 320px;
+        }
+    }
+
+    >.right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: -1rem;
+
+        >.textcontainer{
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+
+            >.name,.email,.tags{
+                font-weight: 400;
+            }
+            >.name,.email,.username,.tags{
+                font-family: Roboto;
+                letter-spacing: 0.02em;
+                margin: 0;
+            }
+
+            >.name,.email{
+                font-size: 28px;
+            }
+
+            >.username{
+                font-size: 2.9rem;
+            }
+        }
+
+        >.scroll{
+            overflow: auto;
+            height: 110px;
+
+            >.tagcontainer{
+                display: grid;
+                height: 15px;
+                width: 300px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+    
+                >.tags{             
+                    background-color: #9F94FF;
+                    border-radius: 30px;
+                    font-size: 18px;
+                    padding: 10px 10px 10px 20px;
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Items from "./DataSet"
 import HomeStyle from "./HomePage.module.scss"
-import RegisterStyle from "../RegisterPage/Register.module.scss"
 import Button from '../Common/Button';
 import WarningImg from "../../Assets/warning.png"
 
@@ -43,7 +42,7 @@ const Home = () => {
     }
     else{
       localStorage.setItem("selected", selected);
-      navigate("/page")
+      navigate("/profile")
     }
   }
 

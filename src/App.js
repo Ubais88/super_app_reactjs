@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Register from './Components/RegisterPage/Register';
 import Home from './Components/HomePage/Home';
-import Page from './Components/thirdpage/Page';
 import "./App.css"
+import ProfilePage from './Components/ProfilePage/ProfilePage';
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         <Routes>
           <Route path='/register' element={<Register/>} />
           <Route path='/' element={<Home/>} />
-          <Route path='/page' element={<Page/>} />
+          <Route path='/profile' element={<ProfilePage/>} />
         </Routes>
     </div>
   );

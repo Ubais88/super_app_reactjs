@@ -148,10 +148,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FF0000;
+    
 
     >.warningmsg{
         margin: 0;
+        color: #FF0000;
         font-family: Roboto;
         font-size: 20px;
         font-weight: 400;
