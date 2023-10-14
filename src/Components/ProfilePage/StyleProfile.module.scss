@@ -2,34 +2,34 @@
     width: 0.1em; /* Set the width of the scrollbar to a very small value */
   }
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: transparent; /* Hide the thumb (dragging part) of the scrollbar */
-  }
+}
 
-
-
+*{
+    box-sizing: border-box;
+}
 
 .main{
-    height: 360px;
-    width: 600px;
+    height: 35vh; 
+    width: 40vw;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 30px;
+    border-radius: 1.7rem;
     background-color:#5746EA;
     margin: 0;
-    
+
 
     >.left{
-        margin: 0px 0 0 -30px;
         display: flex;
         align-items: center;
         justify-content: center;
 
         >.img{
-            width: 160px;
-            height: 320px;
+            width: 8vw;
+            height: 30vh;
         }
     }
 
@@ -38,13 +38,13 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        gap: 2rem;
-        margin-bottom: -1rem;
+        gap: 3vh;
+        // margin-bottom: -1rem;
 
         >.textcontainer{
             display: flex;
             flex-direction: column;
-            gap: 0.2rem;
+            gap: 0.4vh;
 
             >.name,.email,.tags{
                 font-weight: 400;
@@ -56,30 +56,30 @@
             }
 
             >.name,.email{
-                font-size: 28px;
+                font-size: 1.2rem;
             }
 
             >.username{
-                font-size: 2.9rem;
+                font-size: 2.1rem;
             }
         }
 
         >.scroll{
             overflow: auto;
-            height: 110px;
+            height: 13vh;
 
             >.tagcontainer{
                 display: grid;
-                height: 15px;
-                width: 300px;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
+                // height: 0.5vh;
+                width: 20vw;
+                grid-template-columns: repeat(2,1fr);
+                gap: 1vh;
     
                 >.tags{             
                     background-color: #9F94FF;
-                    border-radius: 30px;
-                    font-size: 18px;
-                    padding: 10px 10px 10px 20px;
+                    border-radius: 1.9rem;
+                    font-size: 1rem;
+                    padding: 0.45rem 0 0.45rem 1rem;
                 }
             }
         }

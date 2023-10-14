@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto:wght@400;500;900&family=Single+Day&display=swap');
+
+
+.top{
+    padding: 20px;
+    width: 100vw;
+    overflow: scroll;
+}
+.txtcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: 10vh;
+        height: 10vh;
+        margin-top: 1vh;
+        cursor: pointer;
+
+    }
+
+    p{
+        color: white;
+        margin-left: 4vw ;
+        margin-top: 2vh;
+        font-family: Roboto;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+
+
+    }
+    h1{
+        font-family: Single Day;
+        color: #72DB73;
+        margin-left: 2rem;
+    }
+}

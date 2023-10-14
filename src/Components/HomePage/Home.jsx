@@ -15,7 +15,7 @@ const Home = () => {
     if (!localStorage.getItem('registrationData')) {
         navigate("/register")
     }
-  }, []);
+  }, []); 
 
   const HandleClick = (item) => {
     setWarning(false)
@@ -36,12 +36,12 @@ const Home = () => {
   }
 
   const handleSubmit = () => {
-    console.log("ubais")
     if(selected.length < 3){
       setWarning(true);
     }
     else{
-      localStorage.setItem("selected", selected);
+      setWarning(false)
+      localStorage.setItem("selected", JSON.stringify(selected));
       navigate("/profile")
     }
   }

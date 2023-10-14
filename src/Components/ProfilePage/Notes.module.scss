@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    height: 60vh; 
+    width: 50vh;
+    color: black;
+    background:#F1C75B;
+    border-radius: 1.1rem;
+    padding: 2vh 3vh;
+}
+
+.h2{
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    padding-top: 2vh;
+    cursor: pointer;
+    overflow: scroll;
+    background-color: transparent;
+    height: 92%;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}

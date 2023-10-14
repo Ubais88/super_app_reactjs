@@ -2,7 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import Register from './Components/RegisterPage/Register';
 import Home from './Components/HomePage/Home';
 import "./App.css"
-import ProfilePage from './Components/ProfilePage/ProfilePage';
+import Dashboard from './Components/ProfilePage/Dashboard';
+import Movies from './Components/Movielist/Movies';
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
         <Routes>
           <Route path='/register' element={<Register/>} />
           <Route path='/' element={<Home/>} />
-          <Route path='/profile' element={<ProfilePage/>} />
+          <Route path='/profile' element={<Dashboard/>} />
+          <Route path='/movies' element={<Movies/>} />
         </Routes>
     </div>
   );
