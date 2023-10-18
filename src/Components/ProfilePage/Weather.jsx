@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Style from "./Weather.module.scss"
 import {LuWind , LuSunMedium} from "react-icons/lu"
 import {PiThermometerSimpleBold , PiDropHalfBottomFill} from "react-icons/pi"
-import {TiWeatherCloudy,TiWeatherPartlySunny,TiWeatherShower,TiWeatherNight,TiWeatherStormy} from "react-icons/ti"
+import {TiWeatherPartlySunny,TiWeatherShower,TiWeatherNight,TiWeatherStormy} from "react-icons/ti"
 
 const Weather = () => {
     const [weatherData , setWeatherData] = useState({
@@ -47,18 +47,7 @@ const Weather = () => {
                 const data = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`);
                 
                 const weatherdata = await data.json();
-                // console.log("data",weatherdata)
-
-                // const type = weatherdata.current.condition.text;
-                // console.log(type)
-                // const temp = weatherdata.current.temp_c + "°C";
-                // console.log(temp)
-                // const pressure  = weatherdata.current.pressure_mb + " mbar";
-                // console.log(pressure)
-                // const windspeed = weatherdata.current.wind_kph + " km/h";
-                // console.log(windspeed)
-                // const humidpercent = weatherdata.current.humidity+ "%";
-                // console.log(humidpercent);
+        
 
                 setWeatherData({
                     type:weatherdata.current.condition.text,

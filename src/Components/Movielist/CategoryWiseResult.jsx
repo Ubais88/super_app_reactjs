@@ -18,15 +18,16 @@ const CategoryWiseResult = () => {
     useEffect(() => {
     const fetchData = async () => {
       try{
-        const options = {
-          method: 'GET',
-          headers: {
-            accept: 'application/json',
-            Authorization:
-              'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MGE4M2NlZDdlZGY2ZWM4MTkyOGVlYmYwN2VmYmI0MSIsInN1YiI6IjY1MmEzMTVhMGNiMzM1MTZmODgyYmJlYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QYTgPbcp8WA7hvElnW0wq-DgESoY773-kTdyk-1T9dU',
-          },
-        };
-        const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=80a83ced7edf6ec81928eebf07efbb41`, options);
+        // const options = {
+        //   method: 'GET',
+        //   headers: {
+        //     accept: 'application/json',
+        //     Authorization:
+        //       'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MGE4M2NlZDdlZGY2ZWM4MTkyOGVlYmYwN2VmYmI0MSIsInN1YiI6IjY1MmEzMTVhMGNiMzM1MTZmODgyYmJlYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QYTgPbcp8WA7hvElnW0wq-DgESoY773-kTdyk-1T9dU',
+        //   },
+        // };
+        // const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=80a83ced7edf6ec81928eebf07efbb41`, options);
+        const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=80a83ced7edf6ec81928eebf07efbb41`);
 
         const movies = await data.json();
         console.log("data from movie api",movies.results);
