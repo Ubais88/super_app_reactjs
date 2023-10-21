@@ -35,11 +35,6 @@ useEffect(() => {
                 <span className={Style.tags} key={index}>{name}</span>
               ))
             }
-            {/* <span className={Style.tags}>Horror</span>
-            <span className={Style.tags}>Drama</span>
-            <span className={Style.tags}>Fantasy</span>
-            <span className={Style.tags}>Action</span>
-            <span className={Style.tags}>Action</span> */}
           </div>
         </div>
       </div>
