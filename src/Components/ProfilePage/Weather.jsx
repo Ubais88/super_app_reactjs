@@ -44,7 +44,8 @@ const Weather = () => {
             try{
                 const key = "127688cc7cd242daad895522230710";
                 const city = 'Amroha'
-                const data = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`);
+                // const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`);
+                const data = "123"
                 
                 const weatherdata = await data.json();
         
