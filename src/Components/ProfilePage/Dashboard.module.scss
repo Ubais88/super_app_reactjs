@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainBtn{
+    display: flex;
+    flex-direction: column;
+    margin-top: -22px;
+    overflow: hidden;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.profileweatherContainer{
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+.npwContainer{
+    display: flex;
+    gap: 2vh;
+    flex-direction: row;
+}
+
+.tnpwContainer{
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+.notes{
+
+}
+
+.timer{
+}
+
+
+.btn{
+    position: relative;
+    display: flex;
+    top: -5vh;
+    left: -2.1vw;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
