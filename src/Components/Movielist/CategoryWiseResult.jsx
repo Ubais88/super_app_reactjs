@@ -18,7 +18,8 @@ const CategoryWiseResult = () => {
     useEffect(() => {
     const fetchData = async () => {
       try{
-        const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=80a83ced7edf6ec81928eebf07efbb41`);
+        // const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=80a83ced7edf6ec81928eebf07efbb41`);
+        const data = "ubis"
 
         const movies = await data.json();
         console.log("data from movie api",movies.results);
