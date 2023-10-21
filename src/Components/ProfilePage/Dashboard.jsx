@@ -2,7 +2,7 @@ import React from 'react'
 import Profile from './Profile'
 import Notes from './Notes'
 import Timer from './Timer'
-// import Weather from './Weather'
+import Weather from './Weather'
 import News from './News.jsx'
 import Style from "./Dashboard.module.scss"
 import Button from '../Common/Button'
@@ -23,7 +23,7 @@ const ProfilePage = () => {
           <div className={Style.npwContainer}>
             <div className={Style.profileweatherContainer}>
                 <div className={Style.profile}><Profile/></div>
-                {/* <div className={Style.weather}><Weather/></div> */}
+                <div className={Style.weather}><Weather/></div>
             </div>
             <div className={Style.notes}><Notes/></div>
           </div>
