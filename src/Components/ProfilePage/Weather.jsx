@@ -42,7 +42,7 @@ const Weather = () => {
     useEffect(() => {
         const fetchData = async () => {
             try{
-                const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=127688cc7cd242daad895522230710&q=Amroha`);
+                const data = "weather"
                 
                 const weatherdata = await data.json();
         
