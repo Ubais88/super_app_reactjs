@@ -37,7 +37,8 @@ const ProfilePage = () => {
     //     {/* <Button Text={"Browse"} parentfunction={handlesubmit} /> */}
     //   </div>
     // </div>
-    <div>UBasijdkkkkkkkkkkkkkkkkkkkkkkkkkkk</div>
+    <div className={Style.profile}><Profile/></div>
+
   )
 }
 
