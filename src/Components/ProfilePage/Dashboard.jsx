@@ -34,7 +34,7 @@ const ProfilePage = () => {
         </div>
       </div>
       <div className={Style.btn}>
-        <Button Text={"Browse"} parentfunction={handlesubmit} />
+        {/* <Button Text={"Browse"} parentfunction={handlesubmit} /> */}
       </div>
     </div>
   )
