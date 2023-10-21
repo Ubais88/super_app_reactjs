@@ -1,7 +1,7 @@
 import React from 'react'
 import Profile from './Profile'
 import Notes from './Notes'
-// import Timer from './Timer'
+import Timer from './Timer'
 // import Weather from './Weather'
 // import News from './News.jsx'
 import Style from "./Dashboard.module.scss"
@@ -27,7 +27,7 @@ const ProfilePage = () => {
             </div>
             <div className={Style.notes}><Notes/></div>
           </div>
-          {/* <div className={Style.timer}><Timer/></div> */}
+          <div className={Style.timer}><Timer/></div>
         </div>
         <div className={Style.newssection}>
           {/* <div className={Style.news}><News/></div> */}
