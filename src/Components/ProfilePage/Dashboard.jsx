@@ -23,7 +23,7 @@ const ProfilePage = () => {
           <div className={Style.npwContainer}>
             <div className={Style.profileweatherContainer}>
                 <div className={Style.profile}><Profile/></div>
-                <div className={Style.weather}><Weather/></div>
+                {/* <div className={Style.weather}><Weather/></div> */}
             </div>
             <div className={Style.notes}><Notes/></div>
           </div>
