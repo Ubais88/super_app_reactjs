@@ -4,7 +4,7 @@ import Profile from './Profile'
 // import Timer from './Timer'
 // import Weather from './Weather'
 // import News from './News.jsx'
-// import Style from "./Dashboard.module.scss"
+import Style from "./Dashboard.module.scss"
 // import Button from '../Common/Button'
 // import { useNavigate } from 'react-router-dom'
 
