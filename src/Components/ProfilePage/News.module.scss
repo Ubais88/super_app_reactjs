@@ -1,0 +1,53 @@
+
+.main{
+    width: 25vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+
+    >.img{
+        position: relative;
+        border-radius: 1rem 1rem 0 0;
+        width: 100%;
+        height: 133%;
+        object-fit: cover;
+    }
+
+    >.headingbox{
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        top: 43.5%;
+        width: 25vw;
+        height:16.9vh ;
+        color: white;
+        background-color: #000000BD;
+        font-family: Roboto;
+        font-size: 0.98rem;
+        font-weight: 500;
+        padding: 12px;
+        letter-spacing: 0.02em;
+        overflow: scroll;
+        >.heading{
+            margin-top: 0px;
+        }
+    }
+
+    .para{
+        margin: 0px;
+        padding: 2.5vh 2vh 7vh 2vh;
+        background-color: white;
+        color: black;
+        height: 70%;
+        font-family: Roboto;
+        letter-spacing: 0.02em;
+        font-size: 1.2rem;
+        text-align: justified;
+        overflow: scroll;
+        border-radius: 0 0 1rem 1rem;
+
+    }
+    
+    
+}
