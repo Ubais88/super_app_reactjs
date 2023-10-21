@@ -23,14 +23,14 @@ const ProfilePage = () => {
           <div className={Style.npwContainer}>
             <div className={Style.profileweatherContainer}>
                 <div className={Style.profile}><Profile/></div>
-                <div className={Style.weather}><Weather/></div>
+                {/* <div className={Style.weather}><Weather/></div> */}
             </div>
             <div className={Style.notes}><Notes/></div>
           </div>
           <div className={Style.timer}><Timer/></div>
         </div>
         <div className={Style.newssection}>
-          <div className={Style.news}><News/></div>
+          {/* <div className={Style.news}><News/></div> */}
         </div>
       </div>
       <div className={Style.btn}>
