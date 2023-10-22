@@ -14,25 +14,25 @@ const Weather = () => {
     })
 
 
-    const currentDate = new Date();
-    const year = currentDate.getFullYear();
-    const month = currentDate.getMonth()+1;
-    const day = currentDate.getDate();
-    let hours = currentDate.getHours();
-    let ampm = "AM";
-    if(hours > 12){
-        hours = hours - 12;
-        ampm = "PM";
-    }
-    if(hours == 12){
-        ampm == "PM" ? "AM" : "PM";
-    }
-    let minutes = currentDate.getMinutes();
-    if(minutes < 10){
-        minutes = "0"+minutes;
-    }
-    const formatedDate = `${month}-${day}-${year}`
-    const formatedTime = `${hours}:${minutes} ${ampm}`
+    // const currentDate = new Date();
+    // const year = currentDate.getFullYear();
+    // const month = currentDate.getMonth()+1;
+    // const day = currentDate.getDate();
+    // let hours = currentDate.getHours();
+    // let ampm = "AM";
+    // if(hours > 12){
+    //     hours = hours - 12;
+    //     ampm = "PM";
+    // }
+    // if(hours == 12){
+    //     ampm == "PM" ? "AM" : "PM";
+    // }
+    // let minutes = currentDate.getMinutes();
+    // if(minutes < 10){
+    //     minutes = "0"+minutes;
+    // }
+    // const formatedDate = `${month}-${day}-${year}`
+    // const formatedTime = `${hours}:${minutes} ${ampm}`
 
     console.log("Weather: ",weatherData)
 
@@ -57,8 +57,8 @@ const Weather = () => {
   return (
     <div className={Style.main}>
         <div className={Style.left}>
-            <span className={Style.date}>{formatedDate}</span>
-            <span className={Style.time}>{formatedTime}</span>
+            <span className={Style.date}>12/12/2333</span>
+            <span className={Style.time}>10:12:PM</span>
         </div>
 
         <div className={Style.right}>
