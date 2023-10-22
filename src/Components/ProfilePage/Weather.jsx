@@ -55,7 +55,7 @@ const Weather = () => {
                     ampm = "PM";
                 }
                 if(hours === "12"){
-                    ampm == "PM" ? "AM" : "PM";
+                    ampm === "PM" ? "AM" : "PM";
                 }
                 let minutes = currentDate.getMinutes();
                 if(minutes < 10){
