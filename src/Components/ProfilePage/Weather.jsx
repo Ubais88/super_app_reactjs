@@ -38,16 +38,28 @@ const Weather = () => {
 
 
     useEffect(() => {
-        const fetchData = () => {
+        const fetchData = async () => {
+            try{
+                const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=127688cc7cd242daad895522230710&q=Amroha`);
+                
+                const weatherdata = await data.json();
+        
+
                 setWeatherData({
-                    type:"Sunny",
-                    temp:"23.6°C",
-                    pressure:"23 mbar",
-                    windspeed:"26km/h",
-                    humidpercent:"780%",
+                    type:weatherdata.current.condition.text,
+                    temp:weatherdata.current.temp_c + "°C",
+                    pressure:weatherdata.current.pressure_mb + " mbar",
+                    windspeed:weatherdata.current.wind_kph + " km/h",
+                    humidpercent:weatherdata.current.humidity+ "%",
+                    rain:"LuSunMedium"
                 })
                 // console.log("Weather: ",weatherData)
+
             }
+            catch(error){
+                console.error('Error while fetching weather data:', error);
+            }
+        }
         fetchData();
     }, [])
 
