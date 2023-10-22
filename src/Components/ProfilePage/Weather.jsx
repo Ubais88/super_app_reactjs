@@ -16,6 +16,8 @@ const Weather = () => {
         formatedDate:"",
         formatedTime:""
     })
+    console.log("Hooks: ",timeDate.formatedDate,"   ",timeDate.formatedTime);
+
 
     console.log("Weather: ",weatherData)
 
@@ -58,6 +60,7 @@ const Weather = () => {
                 }
                 const formatedDate = `${month}-${day}-${year}`
                 const formatedTime = `${hours}:${minutes} ${ampm}`
+                console.log("Var: ",formatedDate,"   ",formatedTime);
                 setTimeDate({
                     formatedDate: formatedDate,
                     formatedTime: formatedTime
@@ -77,8 +80,8 @@ const Weather = () => {
   return (
     <div className={Style.main}>
         <div className={Style.left}>
-            <span className={Style.date}>{timeDate.formatedDate}</span>
-            <span className={Style.time}>{timeDate.formatedTime}</span>
+            <span className={Style.date}>12334</span>
+            <span className={Style.time}>12345</span>
         </div>
 
         <div className={Style.right}>
