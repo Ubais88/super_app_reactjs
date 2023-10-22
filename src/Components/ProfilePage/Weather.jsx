@@ -41,12 +41,19 @@ const Weather = () => {
                 // console.log("Weather: ",weatherData)
 
 
-                const currentDate = new Date();
-                const year = currentDate.getFullYear();
-                const month = currentDate.getMonth()+1;
-                const day = currentDate.getDate();
-                let hours = currentDate.getHours();
+                // const currentDate = new Date();
+                // const year = currentDate.getFullYear();
+                const year = 2022
+                // const month = currentDate.getMonth()+1;
+                const month = 13;
+                // const day = currentDate.getDate();
+                const day = 17;
+                // let hours = currentDate.getHours();
+                let hours = 12;
                 let ampm = "AM";
+                if(hours < 10){
+                    hours = "0"+hours;
+                }
                 if(hours > 12){
                     hours = hours - 12;
                     ampm = "PM";
@@ -54,7 +61,8 @@ const Weather = () => {
                 if(hours == 12){
                     ampm == "PM" ? "AM" : "PM";
                 }
-                let minutes = currentDate.getMinutes();
+                // let minutes = currentDate.getMinutes();
+                let minutes = 54;
                 if(minutes < 10){
                     minutes = "0"+minutes;
                 }
@@ -80,8 +88,8 @@ const Weather = () => {
   return (
     <div className={Style.main}>
         <div className={Style.left}>
-            <span className={Style.date}>12334</span>
-            <span className={Style.time}>12345</span>
+            <span className={Style.date}>{timeDate.formatedDate}</span>
+            <span className={Style.time}>{timeDate.formatedTime}</span>
         </div>
 
         <div className={Style.right}>
