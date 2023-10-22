@@ -43,17 +43,13 @@ const Weather = () => {
 
                 const currentDate = new Date();
                 const year = currentDate.getFullYear();
-                // const year = 2022
                 const month = currentDate.getMonth()+1;
-                // const month = 13;
                 const day = currentDate.getDate();
-                // const day = 17;
                 let hours = currentDate.getHours();
-                // let hours = 12;
                 let ampm = "AM";
-                // if(hours < 10){
-                //     hours = "0"+hours;
-                // }
+                if(hours < 10){
+                    hours = "0"+hours;
+                }
                 // if(hours > 12){
                 //     hours = hours - 12;
                 //     ampm = "PM";
