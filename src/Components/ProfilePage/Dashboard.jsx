@@ -10,11 +10,11 @@ import { useNavigate } from 'react-router-dom'
 
 
 const ProfilePage = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const handlesubmit = () => {
-  //   navigate("/movies")
-  // }
+  const handlesubmit = () => {
+    navigate("/movies")
+  }
 
   return (
     <div className={Style.mainBtn}>
@@ -34,7 +34,7 @@ const ProfilePage = () => {
         </div>
       </div>
       <div className={Style.btn}>
-        {/* <Button Text={"Browse"} parentfunction={handlesubmit} /> */}
+        <Button Text={"Browse"} parentfunction={handlesubmit} />
       </div>
     </div>
   )

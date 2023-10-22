@@ -18,12 +18,13 @@ const News = () => {
           try{
             const data = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=a4741b142c01468786c5f377fe7cf9c9`);
             const news = await data.json();
+
             console.log(news.articles[0])
             const date1 = news.articles[0].publishedAt; 
 
             const date = date1.split("T")[0];
             let formatdate = date.split("-")
-            const updatedDate = `${formatdate[1]}-${formatdate[2]}-${formatdate[0]} `
+            const updatedDate = `${formatdate[1]}-${formatdate[2]}-${formatdate[0]}`
             // console.log(updatedDate);
 
             let time = date1.split("T")[1];

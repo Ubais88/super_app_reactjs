@@ -3,7 +3,7 @@ import Register from './Components/RegisterPage/Register';
 import Home from './Components/HomePage/Home';
 import "./App.css"
 import Dashboard from './Components/ProfilePage/Dashboard';
-// import Movies from './Components/Movielist/Movies';
+import Movies from './Components/Movielist/Movies';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
           <Route path='/register' element={<Register/>} />
           <Route path='/' element={<Home/>} />
           <Route path='/profile' element={<Dashboard/>} />
-          {/* <Route path='/movies' element={<Movies/>} /> */}
+          <Route path='/movies' element={<Movies/>} />
         </Routes>
     </div>
   );

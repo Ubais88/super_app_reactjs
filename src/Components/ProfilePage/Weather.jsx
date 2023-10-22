@@ -16,10 +16,10 @@ const Weather = () => {
         formatedDate:"",
         formatedTime:""
     })
-    console.log("Hooks: ",timeDate.formatedDate,"   ",timeDate.formatedTime);
+    // console.log("Hooks: ",timeDate.formatedDate,"   ",timeDate.formatedTime);
 
 
-    console.log("Weather: ",weatherData)
+    // console.log("Weather: ",weatherData)
 
 
     useEffect(() => {
@@ -59,7 +59,7 @@ const Weather = () => {
                 }
                 const formatedDate = `${month}-${day}-${year}`
                 const formatedTime = `${hours}:${minutes} ${ampm}`
-                console.log("Var: ",formatedDate,"   ",formatedTime);
+                // console.log("Var: ",formatedDate,"   ",formatedTime);
                 setTimeDate({
                     formatedDate: formatedDate,
                     formatedTime: formatedTime
@@ -67,7 +67,7 @@ const Weather = () => {
 
             }
             catch(error){
-                console.error('Error while fetching weather data:', error);
+                // console.error('Error while fetching weather data:', error);
             }
         }
         fetchData();
