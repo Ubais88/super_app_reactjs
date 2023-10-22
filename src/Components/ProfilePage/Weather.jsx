@@ -36,36 +36,36 @@ const Weather = () => {
                     pressure:weatherdata.current.pressure_mb + " mbar",
                     windspeed:weatherdata.current.wind_kph + " km/h",
                     humidpercent:weatherdata.current.humidity+ "%",
-                    rain:"LuSunMedium"
+                    // rain:"LuSunMedium"
                 })
                 // console.log("Weather: ",weatherData)
 
 
-                // const currentDate = new Date();
-                // const year = currentDate.getFullYear();
-                const year = 2022
-                // const month = currentDate.getMonth()+1;
-                const month = 13;
-                // const day = currentDate.getDate();
-                const day = 17;
-                // let hours = currentDate.getHours();
-                let hours = 12;
+                const currentDate = new Date();
+                const year = currentDate.getFullYear();
+                // const year = 2022
+                const month = currentDate.getMonth()+1;
+                // const month = 13;
+                const day = currentDate.getDate();
+                // const day = 17;
+                let hours = currentDate.getHours();
+                // let hours = 12;
                 let ampm = "AM";
-                if(hours < 10){
-                    hours = "0"+hours;
-                }
-                if(hours > 12){
-                    hours = hours - 12;
-                    ampm = "PM";
-                }
-                if(hours == 12){
-                    ampm == "PM" ? "AM" : "PM";
-                }
-                // let minutes = currentDate.getMinutes();
-                let minutes = 54;
-                if(minutes < 10){
-                    minutes = "0"+minutes;
-                }
+                // if(hours < 10){
+                //     hours = "0"+hours;
+                // }
+                // if(hours > 12){
+                //     hours = hours - 12;
+                //     ampm = "PM";
+                // }
+                // if(hours == 12){
+                //     ampm == "PM" ? "AM" : "PM";
+                // }
+                let minutes = currentDate.getMinutes();
+                // let minutes = 54;
+                // if(minutes < 10){
+                //     minutes = "0"+minutes;
+                // }
                 const formatedDate = `${month}-${day}-${year}`
                 const formatedTime = `${hours}:${minutes} ${ampm}`
                 console.log("Var: ",formatedDate,"   ",formatedTime);
