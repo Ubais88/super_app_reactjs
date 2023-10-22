@@ -16,8 +16,7 @@ const News = () => {
       useEffect(() => {
         const fetchData = async () => {
           try{
-            const API_KEY = "a4741b142c01468786c5f377fe7cf9c9";
-            const data = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=a4741b142c01468786c5f377fe7cf9c9`);
+            const data = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=a4741b142c01468786c5f377fe7cf9c9`);
             const news = await data.json();
             console.log(news.articles[0])
             const date1 = news.articles[0].publishedAt; 
