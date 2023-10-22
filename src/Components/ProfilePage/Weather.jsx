@@ -42,24 +42,23 @@ const Weather = () => {
     useEffect(() => {
         const fetchData = async () => {
             try{
-                const data = "weather"
+                // const data = "weather"
                 
-                const weatherdata = await data.json();
+                // const weatherdata = await data.json();
         
 
                 setWeatherData({
-                    type:weatherdata.current.condition.text,
-                    temp:weatherdata.current.temp_c + "°C",
-                    pressure:weatherdata.current.pressure_mb + " mbar",
-                    windspeed:weatherdata.current.wind_kph + " km/h",
-                    humidpercent:weatherdata.current.humidity+ "%",
-                    rain:"LuSunMedium"
+                    type:"Sunny",
+                    temp:"23.6°C",
+                    pressure:"23 mbar",
+                    windspeed:"26km/h",
+                    humidpercent:"780%",
                 })
                 // console.log("Weather: ",weatherData)
 
             }
             catch(error){
-                // console.error('Error while fetching weather data:', error);
+                console.error('Error while fetching weather data:', error);
             }
         }
         fetchData();
