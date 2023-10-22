@@ -46,17 +46,13 @@ const Weather = () => {
                 const month = currentDate.getMonth()+1;
                 const day = currentDate.getDate();
                 let hours = currentDate.getHours();
-                var ampm = "AM";
+                var ampm = hours >= 12 ? 'PM' : 'AM';
                 if(hours < 10){
                     hours = "0"+hours;
                 }
                 if(hours > 12){
                     hours = hours - 12;
-                    ampm = "PM";
                 }
-                // if(hours === "12"){
-                //     ampm === "PM" ? "AM" : "PM";
-                // }
                 let minutes = currentDate.getMinutes();
                 if(minutes < 10){
                     minutes = "0"+minutes;
